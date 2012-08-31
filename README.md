@@ -26,6 +26,7 @@ Add the following line to gitolite configuration file (./gitolite-admin/conf/git
 
     include "user_repos.conf"
 
+By default, it'll use `./gitolite-admin` as gitolite directory.
 
 ### Add/remove repositories
 
@@ -40,4 +41,18 @@ Add the following line to gitolite configuration file (./gitolite-admin/conf/git
     >>> gitolite.getRepos()
     {}
 
+
+
+### Add/remove ssh keys
+
+    >>> import gitolite_manager
+    >>> gitolite = gitolite_manager.Gitolite()
+    >>> gitolite.addSSHKey('username', 'keyname', 'ssh key content')
+    True
+    >>> gitolite.getSSHKeys()
+    {'username': ['keyname']}
+    >>> gitolite.rmSSHKey('username','keyname')
+    True
+    >>> gitolite.getSSHKeys()
+    {}
 
