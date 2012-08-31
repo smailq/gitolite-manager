@@ -16,8 +16,14 @@ From source:
 
     $ sudo python setup.py install
 
-
 ## Getting Started
+
+### Prepare gitolite
+
+Add the following line to gitolite configuration file (./gitolite-admin/conf/gitolite.conf)
+
+    include "user_repos.conf"
+
 
 ### Add/remove repositories
 
