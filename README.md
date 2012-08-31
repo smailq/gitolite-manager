@@ -3,6 +3,8 @@ Gitolite Manager
 
 Manage gitolite config and ssh keys.
 
+*Currently in pre-alpha, not polished at all!*
+
 
 ## Installation
 
