@@ -1,7 +1,7 @@
 Gitolite Manager
 ================
 
-Manage gitolite config and ssh keys.
+Manage [gitolite](https://github.com/sitaramc/gitolite) config and ssh keys.
 
 *Currently in pre-alpha, not polished at all!*
 
